@@ -23,5 +23,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :phone_number, format: { with: /[+]?\d+(?>[- .]\d+)*/, allow_nil: true }
+  validates :phone_number, format: { with: /\A[+]?\d{2}(\s|-)\d{3}(\s|-)\d{3}(\s|-)\d{3}\z/, allow_nil: true }
 end
