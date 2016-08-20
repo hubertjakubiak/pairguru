@@ -12,6 +12,7 @@ gem 'decent_decoration'
 gem 'decent_exposure'
 gem 'netguru_theme'
 gem 'annotate', '~> 2.6.5'
+gem 'will_paginate', '~> 3.1.0'
 
 group :development do
   gem 'rails-erd'

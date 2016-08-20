@@ -14,4 +14,7 @@
 
 class Movie < ActiveRecord::Base
   belongs_to :genre
+
+  self.per_page = 10
+  
 end
