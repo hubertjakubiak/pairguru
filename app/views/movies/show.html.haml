@@ -3,7 +3,9 @@
     %h1= movie.title
 .row
   .col-sm-6.text-center
-    %img.img-rounded{ src: movie.cover }
-  .col-sm-6.text-center
-    %p= movie.genre.name
+    %img.img-rounded{ src: movie.cover_single }
+  .col-sm-6
+    %p
+      %strong
+        = movie.genre.name
     %p= movie.description
